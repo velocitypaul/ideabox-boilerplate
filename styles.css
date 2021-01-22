@@ -1,0 +1,30 @@
+body {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  font-family: "Open Sans", sans-serif;
+}
+
+.menu {
+  background-color: #1f1f3d;
+  height: 100%;
+  color: #ffffff;
+}
+
+.main {
+}
+
+.entryForm {
+  background-color: #a9aad2;
+  height: 300px;
+}
+
+.cards {
+  background-color: #eaeaf4;
+  height: 400px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+}
