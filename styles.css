@@ -1,13 +1,40 @@
-body {
+.body {
   display: grid;
   grid-template-columns: 250px 1fr;
+  grid-gap: 1px;
   font-family: "Open Sans", sans-serif;
 }
 
 .menu {
   background-color: #1f1f3d;
-  height: 100%;
-  color: #ffffff;
+  color: #e9e9f3;
+}
+
+h1 {
+  padding: 0 10px;
+}
+
+.filter {
+  border-bottom: 2px solid #353567;
+  border-top: 2px solid #353567;
+  padding: 0 10px;
+}
+
+.filter__heading {
+  font-weight: 400;
+  color: #bfbfdd;
+}
+
+.filter__button {
+  margin: 0 auto 20px;
+  display: block;
+  background-color: #5356a4;
+  color: #e9e9f3;
+  border: 2px solid #353567;
+  width: 100%;
+  line-height: 40px;
+  font-weight: 400;
+  font-size: 1.25em;
 }
 
 .main {
@@ -15,7 +42,60 @@ body {
 
 .entryForm {
   background-color: #a9aad2;
-  height: 300px;
+  height: 350px;
+  /* display: grid;
+  grid-template-columns: 1fr; */
+  text-align: left;
+  padding-right: 100px;
+  padding-left: 100px;
+  color: #1f1f3d;
+}
+
+#newIdeaTitle {
+  height: 40px;
+  width: 100%;
+  border: 2px solid #353567;
+  color: #e9e9f3;
+  border-radius: 3px;
+}
+
+#newIdeaBody {
+  height: 80px;
+  width: 100%;
+  border: 2px solid #353567;
+  border-radius: 3px;
+}
+
+.newIdeaButton {
+  height: 40px;
+  width: 100%;
+  border: 2px solid #353567;
+  background-color: #1f1f3d;
+  color: #e9e9f3;
+  border-radius: 3px;
+}
+
+.search {
+  display: flex;
+  border-radius: 3px;
+}
+
+.searchButton {
+  width: 40px;
+  height: 40px;
+  background-color: #353567;
+  border: 2px solid #353567;
+}
+
+#ideaSearch {
+  border: 2px solid #353567;
+  height: 34px;
+  width: 100%;
+  color: #353567;
+}
+
+#ideaSearch::placeholder {
+  color: #353567;
 }
 
 .cards {
@@ -24,7 +104,7 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  body {
+  .body {
     grid-template-columns: 1fr;
   }
 }

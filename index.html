@@ -3,13 +3,13 @@
   <head>
     <title>IdeaBox</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="./styles.css" />
   </head>
   <script src="./src/main.js"></script>
-  <body>
+  <section class="body">
     <nav class="menu">
       <h1>IdeaBox</h1>
       <div class="filter">
@@ -17,8 +17,20 @@
         <button class="filter__button">Show Starred Ideas</button>
       </div>
     </nav>
-    <main>
-      <section class="entryForm"></section>
+    <section class="main">
+      <form class="entryForm">
+        <br>
+        <label for="newIdeaTitle">Title</label><br>
+        <input type="text" id="newIdeaTitle" name="newIdeaTitle" /><br><br>
+        <label for="newIdeaBody">Body</label><br>
+        <input type="text" id="newIdeaBody" name="newIdeaBody" /><br><br>
+        <button class="newIdeaButton">Save</button><br><br>
+        <div class="search">
+          <button class="searchButton" type="submit"><img src="images/search.svg" /></button>
+          <label for="ideaSearch"></label>
+          <input type="text" id="ideaSearch" name ="ideaSearch" placeholder="Search ideas">
+        </div>
+      </form>
       <section class="cards"></section>
     </main>
   </body>
