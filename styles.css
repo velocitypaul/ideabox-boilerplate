@@ -97,13 +97,105 @@ h1 {
   color: #353567;
 }
 
-.cards {
+.ideas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: #eaeaf4;
-  height: 400px;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 20px;
+}
+
+.idea {
+  background: #ffffff;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.idea__header {
+  background-color: #1f1f3d;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.idea__star {
+  background: url(/images/star.svg);
+  height: 30px;
+  width: 30px;
+  margin: 5px 5px;
+  cursor: pointer;
+}
+
+.is-favorite .idea__star,
+.idea__star:hover {
+  background: url(/images/star-active.svg);
+}
+
+.is-favorite .idea__star:hover {
+  background: url(/images/star.svg);
+}
+
+.idea__delete {
+  background: url(/images/delete.svg);
+  height: 30px;
+  width: 30px;
+  margin: 5px 5px;
+  cursor: pointer;
+}
+
+.idea__delete:hover {
+  background: url(/images/delete-active.svg);
+}
+
+.idea__title {
+  font-size: 20px;
+}
+
+.idea__body {
+  padding: 0 20px;
+  margin-top: 10px;
+}
+
+.idea__bodycopy {
+  font-size: 20px;
+}
+
+.idea__footer {
+  background: #5356a4;
+  height: 40px;
+}
+
+.idea__comment {
+  background: url(/images/comment.svg);
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.idea__comment::after {
+  content: "Comment";
+  color: #ffffff;
+  font-weight: 600;
+  font-style: normal;
+  padding-left: 36px;
+  line-height: 32px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 1023px) {
+  .ideas {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .body {
+    grid-template-columns: 1fr;
+  }
+  .ideas {
     grid-template-columns: 1fr;
   }
 }
