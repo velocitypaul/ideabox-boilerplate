@@ -4,7 +4,7 @@
     <title>IdeaBox</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="./styles.css" />
@@ -19,7 +19,34 @@
       </div>
     </nav>
     <main>
-      <section class="entryForm"></section>
+      <form class="entryForm">
+        <br />
+        <label for="entryForm__input--title">Title</label><br />
+        <input
+          type="text"
+          id="entryForm__input--title"
+          name="entryForm__input--title"
+        /><br /><br />
+        <label for="entryForm__input--body">Body</label><br />
+        <input
+          type="text"
+          id="entryForm__input--body"
+          name="entryForm__input--body"
+        /><br /><br />
+        <button class="entryForm__input--button">Save</button>
+      </form>
+      <form class="searchForm">
+        <button class="search__button" type="submit">
+          <img src="images/search.svg" />
+        </button>
+        <label for="search__input"></label>
+        <input
+          type="text"
+          id="search__input"
+          name="search__input"
+          placeholder="Search ideas"
+        />
+      </form>  
       <section class="ideas">
         <article class="idea is-favorite">
           <header class="idea__header">
