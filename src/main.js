@@ -6,13 +6,11 @@ function deleteFromStorage() {}
 
 function deleteIdeaElement(element) {
   var parent = this.closest(".idea");
-  console.log(parent);
   parent.remove();
 }
 
 function addStarredClass(element) {
   var parent = this.closest(".idea");
-  console.log(parent);
   parent.classList.toggle("is-favorite");
 }
 
