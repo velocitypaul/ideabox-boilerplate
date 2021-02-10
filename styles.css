@@ -127,13 +127,8 @@ h1 {
   cursor: pointer;
 }
 
-.is-favorite .idea__star,
-.idea__star:hover {
+.is-favorite .idea__star {
   background: url(/images/star-active.svg);
-}
-
-.is-favorite .idea__star:hover {
-  background: url(/images/star.svg);
 }
 
 .idea__delete {
