@@ -4,13 +4,14 @@ function saveToStorage() {}
 
 function deleteFromStorage() {}
 
-function deleteIdeaElement(element) {
-  var parent = this.closest(".idea");
+function deleteIdeaElement(event) {
+  console.log(event.target);
+  var parent = event.target.closest(".idea");
   parent.remove();
 }
 
-function addStarredClass(element) {
-  var parent = this.closest(".idea");
+function addStarredClass(event) {
+  var parent = event.target.closest(".idea");
   parent.classList.toggle("is-favorite");
 }
 
